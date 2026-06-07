@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.ob-hakkimda-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    background-color: #141414;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #d1d1d1;
+}
+.ob-profile-box {
+    display: flex;
+    background-color: #1b1b1b;
+    max-width: 950px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid #282828;
+    overflow: hidden;
+}
+.ob-avatar-side {
+    flex: 0 0 32%;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px 20px;
+}
+.ob-my-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #2c3e50;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+.ob-my-img:hover {
+    filter: grayscale(0%);
+}
+.ob-text-side {
+    flex: 1;
+    padding: 40px;
+}
+.ob-main-title {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.ob-subtitle {
+    font-size: 1rem;
+    color: #888888;
+    display: block;
+}
+.ob-line-divider {
+    height: 1px;
+    background: #282828;
+    margin: 20px 0;
+}
+.ob-block {
+    margin-bottom: 22px;
+}
+.ob-block-h {
+    font-size: 1.15rem;
+    color: #ececec;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+.ob-block-p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #b5b5b5;
+    margin: 0;
+    text-align: left;
+}
+.ob-self-critique {
+    padding: 15px;
+    background-color: #221c1a; 
+    border-left: 3px solid #d35400;
+    border-radius: 4px;
+}
+.ob-contact-area {
+    margin-top: 25px;
+}
+.ob-contact-title {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+.ob-social-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.ob-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.ob-mail { background-color: #2d3748; }
+.ob-mail:hover { background-color: #1a202c; }
+
+.ob-git { background-color: #24292e; border: 1px solid #3f4448; }
+.ob-git:hover { background-color: #171a1d; }
+
+.ob-lnk { background-color: #1e3a5f; }
+.ob-lnk:hover { background-color: #11223b; }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyun Bulutu | Tanıtım ve İndirme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="ana-nav">
+    <ul class="nav-grup">
+    <li><a href="../site/uygulamalar.html" class="menu-kutu">Uygulamalar</a></li>
+    <li class="dropdown">
+    <a href="../site/oyunlar.html" class="menu-kutu">Oyunlar</a>
+    <ul class="dropdown-menu">
+            <li><a href="../site/oyunlar.html">Popüler Oyunlar</a></li>
+            <li><a href="../site/cikicak-oyunlar.html">Çıkacak Oyunlar</a></li>
+        </ul>
+    </li>
+    </ul>
+<div class="logo-merkez">
+    <a href="../site/index.html" class="logo-link">
+        <img src="../Resimler/Logo.png" alt="Oyun Bulutu Logo" class="site-logo">
+        <h1 class="site-adi">Oyun Bulutu</h1>
+    </a>
+</div>
+    <ul class="nav-grup">
+        <li><a href="../site/inceleme.html" class="menu-kutu">İnceleme</a></li>
+        <li><a href="../site/hakkimizda.html" class="menu-kutu">Hakkımda</a></li>
+    </ul>
+</nav>
+</header>
+<section class="ob-hakkimda-wrap">
+    <div class="ob-profile-box">
+        <div class="ob-avatar-side">
+            <img src="../Resimler/Fotografim.png" alt="Alpaslan Aslantaş" class="ob-my-img">
+        </div>
+        <div class="ob-text-side">
+            <h1 class="ob-main-title">Selam, Ben Alpaslan</h1>
+            <span class="ob-subtitle">Oyun Bulutu'nun arkasındaki isim: <strong>Alpaslan Aslantaş</strong></span>
+            <div class="ob-line-divider"></div>
+            <div class="ob-block">
+                <h3 class="ob-block-h">Okul ve Akademik Taraf</h3>
+                <p class="ob-block-p">
+                    Şu an üniversitede Bilgisayar Programcılığı okuyorum. Eğitim hayatım boyunca teorik derslerin yanında işin mutfağına, yani pratik projelere ağırlık vermeye çalıştım. Yazılımın yanında siber güvenlik, web geliştirme ve Linux sistemler (özellikle Arch tabanlı yapılar) üzerinde vakit harcıyorum. Teoride gördüğüm şeyleri Oyun Bulutu gibi kendi geliştirdiğim projelerle pratiğe dökmek benim için en iyi öğrenme yöntemi oluyor.
+                </p>
+            </div>
+            <div class="ob-block">
+                <h3 class="ob-block-h">Bu Sayfa Nereden Çıktı? (Motivasyon)</h3>
+                <p class="ob-block-p">
+                    Oyunlar benim için sadece vakit geçirme aracı değil; arkasındaki tasarım süreçleri, oyun motorlarının çalışma mantığı ve hikaye anlatımları her zaman daha çok ilgimi çekti. Oyun Bulutu projesi de tam olarak bu merakın bir sonucu. İnternette sadece oyun satılan ya da düz haber geçilen yerlerin ötesinde, oyun kültürünü ve tasarım detaylarını kendi penceremden aktarabileceğim bir alan oluşturmak istedim. Ve tabii ki programlama temelleri dersimden yüksek not almak istedim.
+                </p>
+            </div>
+            <div class="ob-block ob-self-critique">
+                <h3 class="ob-block-h">Biraz Öz Eleştiri</h3>
+                <p class="ob-block-p">
+                    Bir projeye başladığımda bazen teknik detaylarda ve "kusursuz olsun" fikrinde çok fazla kayboluyorum. Kodun arkasındaki bir detayı veya içerikteki küçük bir noktayı takıntı haline getirmek bazen iş çıkarma sürecimi yavaşlatabiliyor. Ayrıca zaman yönetimi konusunda kendimi hala eğitiyorum; bir şeye odaklandığımda saatlerin nasıl geçtiğini fark etmeyip diğer planları sarkıtabiliyorum ama bunu istikrarlı adımlarla aşmaya çalışıyorum.
+                </p>
+            </div>
+            <div class="ob-block">
+                <h3 class="ob-block-h">Gelecekte Neler Olacak?</h3>
+                <p class="ob-block-p">
+                    Oyun Bulutu'nu sadece bu şekilde statik bir web sayfası olarak bırakmak istemiyorum. İleride platformu daha interaktif, kullanıcıların da dahil olabileceği bir yapıya taşımak planlarım arasında. Ayrıca oyun tasarımlarını ve oyunların arkasındaki hikayeleri derinlemesine inceleyen belgesel tarzında video makaleler (video essay) hazırlayıp, bu sayfayı o içeriklerin de merkezi haline getirmeyi hedefliyorum.
+                </p>
+            </div>
+            <div class="ob-line-divider"></div>
+            <div class="ob-contact-area">
+                <h4 class="ob-contact-title">Bana Ulaşın</h4>
+                <div class="ob-social-grid">
+                    <a href="mailto:alpaslanaslantas@gmail.com" class="ob-btn ob-mail">
+                        <i class="fas fa-envelope"></i> Mail Gönder
+                    </a>
+                    <a href="https://github.com/AlpaslanAslantas" target="_blank" class="ob-btn ob-git">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/alpaslan-aslantaş" target="_blank" class="ob-btn ob-lnk">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

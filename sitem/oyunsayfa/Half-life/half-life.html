@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Half-Life | Black Mesa Arşivi</title>
+    <link rel="stylesheet" href="/site/style.css">
+    <style>
+body {
+    background: radial-gradient(circle, #2c3e50 0%, #000000 100%);
+    color: #cbd5e0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hl-akisi {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.hl-bolum {
+    padding: 100px 50px;
+    border-bottom: 1px solid rgba(243, 156, 18, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hl-dev-baslik {
+    font-size: 4rem;
+    color: #f39c12;
+    text-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+    margin-bottom: 40px;
+}
+
+.hl-orta-baslik {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+.hl-metin-alani p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+.hl-buyuk-resim {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border: 5px solid #333;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+.hl-ara-resim {
+    width: 80%;
+    max-width: 700px;
+    border-left: 10px solid #f39c12;
+    margin: 20px 0;
+}
+.hl-mega-buton {
+    display: inline-block;
+    padding: 25px 60px;
+    background-color: #f39c12;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+.hl-mega-buton:hover {
+    background-color: #fff;
+    box-shadow: 0 0 50px #f39c12;
+    transform: scale(1.1);
+}
+.video-cerceve {
+    width: 80%;
+    max-width: 800px;
+    border: 3px solid #f39c12;
+    box-shadow: 0 0 25px rgba(243, 156, 18, 0.4);
+    margin: 20px auto;
+    background: #000;
+}
+.mini-dusman {
+    width: 80px; /* Biraz büyütelim vuruş alanı artsın */
+    vertical-align: middle;
+    position: relative; 
+    z-index: 9999; /* En üstte olmasını sağlar */
+    cursor: pointer; /* Üzerine gelince el işareti çıksın */
+}
+.hasar-aldi {
+    filter: sepia(1) saturate(5) hue-rotate(-50deg); /* Kırmızımsı efekt */
+    transform: scale(0.9);
+}
+
+/* Öldüğünde uygulanacak sınıf */
+.oldu {
+    transform: rotate(180deg) translateY(500px); /* Ters dönüp aşağı düşme */
+    transition: transform 1s ease-in;
+    pointer-events: none; /* Artık tıklanamaz */
+}
+
+/* Levye alanı */
+.easter-egg-alani {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#levye {
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.levye-modu {
+    /* Resmin yolunun doğru olduğundan (klasör adı/dosya adı) emin ol */
+    /* auto kısmı zorunludur! */
+    cursor: url('/Resimler/half-life levye.png'), auto !important; 
+}
+#levye:hover { transform: rotate(-20deg); }
+/* Levye alındığında tüm sayfada imleç levye olsun */
+.levye-modu {
+    cursor: url('/Resimler/Half-LifeLevye.png'), auto !important;
+}
+    </style>
+</head>
+<body>
+
+<header>
+<nav class="ana-nav">
+    <ul class="nav-grup">
+    <li><a href="/site/uygulamalar.html" class="menu-kutu">Uygulamalar</a></li>
+    <li class="dropdown">
+    <a href="/site/oyunlar.html" class="menu-kutu">Oyunlar</a>
+    <ul class="dropdown-menu">
+            <li><a href="/site/oyunlar.html">Popüler Oyunlar</a></li>
+            <li><a href="/site/cikicak-oyunlar.html">Çıkacak Oyunlar</a></li>
+        </ul>
+    </li>
+    </ul>
+<div class="logo-merkez">
+    <a href="/site/index.html" class="logo-link">
+        <img src="/Resimler/Logo.png" alt="Oyun Bulutu Logo" class="site-logo">
+        <h1 class="site-adi">Oyun Bulutu</h1>
+    </a>
+</div>
+    <ul class="nav-grup">
+        <li><a href="/site/inceleme.html" class="menu-kutu">İnceleme</a></li>
+        <li><a href="/site/hakkimizda.html" class="menu-kutu">Hakkımda</a></li>
+    </ul>
+</nav>
+</header>
+
+<main class="hl-akisi">
+    <section class="hl-bolum giris">
+        <h1 class="hl-dev-baslik">Half Life</h1>
+        <h1 class="hl-dev-baslik">DENEY GÜNLÜĞÜ: #17</h1>
+        <div class="hl-metin-alani">
+            <img src="/Resimler/HalfLifekapakfoto.jpg" class="hl-ara-resim">
+            <p>Oyun boyunca sadece hayatta kalmaya değil aynı zamanda bu felaketin nedenini anlamaya çalışıyoruz. Karşımızda sadece başka bir boyuttan gelen yaratıklar yok aynı zamanda içeride hayatta kalan masumları kurtarmaya için gelmeyen özel harekat birlikleri (HECU) ile de bir savaşa giriyoruz.</p>
+        </div>
+    </section>
+    <section class="hl-bolum hikaye"> 
+<h2 class="hl-orta-baslik">>> ANALİZ: REZONANS ÇAĞLAYANI <img src="/Resimler/headcrab.png" id="headcrab" alt="Headcrab" class="mini-dusman"></h2>
+        <div class="hl-metin-alani">
+            <p>Yıl 1998... Black Mesa Araştırma Tesisinde gerçekleştirilen deney beklentilerin çok ötesinde bir afete yol açtı. GG-3883 Materyali test odasına yerleştirildiğinde (Anti-Kütle Spektrometresine) uzayın ve zamanın dokusu parçalandı...</p>
+        </div>
+        <div class="video-cerceve">
+        <video width="100%" autoplay muted loop playsinline>
+            <source src="/Resimler/half-lifevideo.mp4" type="video/mp4">
+        </video>
+        </div>
+    </section>
+    <section class="hl-bolum karakter">
+        <h2 class="hl-orta-baslik">>> DENEYEK: GORDON FREEMAN</h2>
+        <div class="hl-metin-alani">
+            <p>Eski MIT mezunu teorik fizikçi olan Gordon Freeman konuşmasa da levyesiyle cevabı veriyor. Hem uzaylı istilasına hem de ordu tarafından operasyonu yürüten HECU birliklere karşı baş başa kalıyor</p>
+        </div>
+        <img src="/Resimler/halflifekapak.png" class="hl-ara-resim">
+    </section>
+
+    <!-- İNDİRME VE BUTON BÖLÜMÜ -->
+    <section class="hl-bolum indirme">
+        <h2 class="hl-orta-baslik">>> ERİŞİM: DOSYA AKTARIMI</h2>
+        <div class="buton-merkez">
+    <a href="Half life.zip" download="HalfLife_Yukleme_Paketi" class="hl-mega-buton">PROTOKOLÜ BAŞLAT (İNDİR)</a>
+        </div>
+        <div class="easter-egg-alani">
+            <img src="/Resimler/crowbar.png" id="levye" alt="Crowbar" onclick="levyeyiAl()">
+            <p id="ipucu">Levyeye tıkla ve intikamını al!</p>
+        </div>
+    </section>
+    <script src="/site/halflife.js"></script>
+    <img src="/Resimler/Half-LifeLevye.png" id="takipci-levye" style="display:none; position:fixed; pointer-events:none; z-index:10000; width:150px;">
+</main>
